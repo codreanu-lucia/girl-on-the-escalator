@@ -1,0 +1,105 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color:black;
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+}
+
+.playbox{
+	display:flex;
+	padding:0 5%;
+	align-items:center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* AICI INCEP EDITABILELE*/
+.cell{
+	padding:5px;
+	
+}
+.cell1 {
+  flex: 66.66%;
+  max-width: 66.66%;
+}
+
+.cell2 {
+	flex:33.33%;
+	max-width:33.33%;
+}
+
+.cell3{
+	flex:33.33%;
+	max-width:33.33%;
+}
+.cell4{
+	flex:33.33%;
+	max-width:33.33%;
+}
+.cell5{
+	flex:33.33%;
+	max-width:33.33%;
+}
+
+.cell img {
+  vertical-align: middle;
+  width:100%;
+  height:auto;
+}
+
+/* AICI SFARSESC EDITABILELE*/
+
+.navigation {
+	text-align:center;
+	padding:15px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+a.next:hover{
+	background-color: white;
+	color:black;
+}
+
+ul.dots li {
+	display:inline;
+	background-color:red;
+}
+
+
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+	
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .cell {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+
+

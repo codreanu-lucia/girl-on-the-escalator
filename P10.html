@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color:black;
+}
+
+.header {
+  text-align: center;
+  padding-top: 10px;
+  color:white;
+  font-size:30px;
+}
+
+.playbox{
+	display:flex;
+	padding:0 5%;
+	align-items:center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* AICI INCEP EDITABILELE*/
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding:5px;
+}
+
+
+.column img {
+  vertical-align: middle;
+  width:100%;
+  height:auto;
+  margin-bottom:5px;
+  padding-bottom:8px;
+}
+
+/* AICI SFARSESC EDITABILELE*/
+
+.navigation {
+	text-align:center;
+	padding:15px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+a.next:hover{
+	background-color: white;
+	color:black;
+}
+
+ul.dots li {
+	display:inline;
+	background-color:red;
+}
+
+
+
+.next {
+  background-color: red;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+#activ {
+background-color:white;
+}
+	
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .cell {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column {
+  flex: 100%;
+  max-width: 100%;
+
+}
+</style>
+</head>
+
+<body>
+
+
+
+<!-- lOC PENTRU TEXT -->
+  <div class="header">
+	<p>I watch him take her up the escalator, his arm protectively about her waist, <br/>thinking he's lucky,
+ <br/></p>
+  </div>
+
+  
+ <!-- ZONA COMICSTRIP -->
+  <div class="playbox">
+	<div class="row"> 
+	  <div class="column">
+		<img src="done/15.jpg" style="width:100%">
+	  </div>
+	  <div class="column">
+		<img img id='im1' onmouseover="document.getElementById('im1').src='done/15b.gif'" onmouseout="document.getElementById('im1').src='done/15b.jpg'" src="done/15b.gif" style="width:100%">
+		<img src='done/15a.jpg' style="width:100%">
+	  </div>
+	</div>
+  </div>
+  
+  
+<!--NAVIGARE-->
+  <div class="navigation">
+  	<a href="p9.html" class="next round">&#8249;</a></li>
+	<a href="p11.html" class="next round">&#8250;</a></li>
+	<div class="navdots">
+		<ul class="dots round">
+		 <li><a href="INDEX.html"></a></li>
+		  <li><a href="P2.html"></a></li>
+		  <li><a href="P3.html"></a></li>
+		  <li><a href="P4.html"></a></li>
+		  <li><a href="P5.html"></a></li>
+		  <li><a href="P6.html"></a></li>
+		  <li><a href="P7.html"></a></li>
+		  <li><a href="P8.html"></a></li>
+		  <li><a href="P9.html"></a></li>
+		  <li id="activ"><a href="P10.html"></a></li>
+		  <li><a href="P11.html"></a></li>
+		  <li><a href="P12.html"></a></li>
+		</ul>
+	</div>
+
+  </div>
+
+
+
+</body>
+</html>

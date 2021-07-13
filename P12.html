@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script language="javascript" type="text/javascript">
+
+
+</script>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color:black;
+}
+
+.header {
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.playbox{
+	display:flex;
+	padding:0 5%;
+	align-items:center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* AICI INCEP EDITABILELE*/
+.cell{
+	padding:5px;
+	
+}
+.cell1 {
+  flex: 100%;
+  max-width: 100%;
+}
+
+.cell img {
+  vertical-align: middle;
+  width:100%;
+  height:auto;
+}
+
+/* AICI SFARSESC EDITABILELE*/
+
+.navigation {
+	text-align:center;
+	padding:15px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+a.next:hover{
+	background-color: white;
+	color:black;
+}
+
+ul.dots li {
+	display:inline;
+	background-color:red;
+}
+
+
+
+.next {
+  background-color: red;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+#activ {
+background-color:white;
+}	
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .cell {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+
+
+<!-- lOC PENTRU TEXT -->
+  <div class="header">
+<p>And he's right.
+</p>
+  </div>
+
+  
+ <!-- ZONA COMICSTRIP -->
+  <div class="playbox">
+	<div class="row"> 
+	  <div class="cell cell1">
+		<img src="done/17.jpg" style="width:100%">
+	  </div>
+	</div>
+  </div>
+  
+  
+<!--NAVIGARE-->
+  <div class="navigation">
+  <a href="p11.html" class="next round">&#8249;</a></li>
+	<div class="navdots">
+		<ul class="dots round">
+		  <li>
+		  <a href="INDEX.html"><p style="color:white; text-align:center; padding:20px">VIEW AGAIN</p></a></li>
+		</ul>
+	</div>
+	
+  </div>
+
+
+
+</body>
+</html>

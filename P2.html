@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</script>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color:black;
+}
+
+.header {
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-size: 40px;
+}
+
+.playbox{
+	display:flex;
+	padding:0 5%;
+	align-items:center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* AICI INCEP EDITABILELE*/
+.cell{
+	padding:5px;
+	
+}
+.cell1 {
+  flex: 66.66%;
+  max-width: 66.66%;
+}
+
+.cell2 {
+	flex:33.33%;
+	max-width:33.33%;
+}
+
+.cell3{
+	flex:33.33%;
+	max-width:33.33%;
+}
+.cell4{
+	flex:33.33%;
+	max-width:33.33%;
+}
+.cell5{
+	flex:33.33%;
+	max-width:33.33%;
+}
+
+.cell img {
+  vertical-align: middle;
+  width:100%;
+  height:auto;
+}
+
+/* AICI SFARSESC EDITABILELE*/
+
+.navigation {
+	text-align:center;
+	padding:15px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+a.next:hover{
+	background-color: white;
+	color:black;
+}
+
+ul.dots li {
+	display:inline;
+	background-color:red;
+}
+
+
+
+.next {
+  background-color: red;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+#activ {
+background-color:white;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .cell {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+
+<!-- lOC PENTRU TEXT -->
+  <div class="header">
+	<p>As I walk towards the escalator,</p>
+  </div>
+
+  
+ <!-- ZONA COMICSTRIP -->
+  <div class="playbox">
+	<div class="row"> 
+	  <div class="cell cell1"
+	  onmouseover="document.getElementById('im1').src='done/1.gif'" 
+	  onmouseout="document.getElementById('im1').src='done/1.jpg'">
+		<img id='im1' src="done/1.jpg" style="width:100%">
+	  </div>
+      <div class="cell cell2"
+	onmouseover="document.getElementById('im2').src='done/2.gif'" 
+	  onmouseout="document.getElementById('im2').src='done/2.jpg'"	  >
+		<img id='im2' src="done/2.gif" style="width:100%">
+	  </div>
+	  <div class="cell cell3">
+		<img src="done/3.gif" style="width:100%">
+	  </div>
+	  <div class="cell cell4">
+		<img src="done/3b.gif" style="width:100%" >
+	  </div>
+	  <div class="cell cell5">
+		<img src="done/3c.gif" style="width:100%">
+	  </div>
+	</div>
+  </div>
+  
+  
+<!--NAVIGARE-->
+  <div class="navigation">
+	<a href="index.html" class="next round">&#8249;</a></li>
+	<a href="p3.html" class="next round">&#8250;</a></li>
+	<div class="navdots">
+		<ul class="dots round">
+		  <li><a href="INDEX.html"></a></li>
+		  <li id="activ"><a href="#"></a></li>
+		  <li><a href="P3.html"></a></li>
+		  <li><a href="P4.html"></a></li>
+		  <li><a href="P5.html"></a></li>
+		  <li><a href="P6.html"></a></li>
+		  <li><a href="P7.html"></a></li>
+		  <li><a href="P8.html"></a></li>
+		  <li><a href="P9.html"></a></li>
+		  <li><a href="P10.html"></a></li>
+		  <li><a href="P11.html"></a></li>
+		  <li><a href="P12.html"></a></li>
+		</ul>
+	</div>
+
+  </div>
+
+
+
+</body>
+</html>

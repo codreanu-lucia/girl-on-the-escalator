@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-color:black;
+}
+
+.header {
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.playbox{
+	display:flex;
+	padding:0 5%;
+	align-items:center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* AICI INCEP EDITABILELE*/
+
+.cell {
+  flex: 50%;
+  max-width: 50%;
+  padding:0 5px 0 5px;
+}
+
+
+.cell img {
+  vertical-align: middle;
+  width:100%;
+  height:auto;
+}
+
+/* AICI SFARSESC EDITABILELE*/
+
+.navigation {
+	text-align:center;
+	padding:15px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+a.next:hover{
+	background-color: white;
+	color:black;
+}
+
+ul.dots li {
+	display:inline;
+	background-color:red;
+}
+
+
+
+.next {
+  background-color: red;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}#activ {
+background-color:white;
+}
+	
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .cell {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+
+
+<!-- lOC PENTRU TEXT -->
+  <div class="header">
+	<p>The young man appears worried, he looks at me. I look away. <i> No</i>, I am not looking at your girl's behind. </br> I respect her and I respect <i> you</i>. 
+
+</p>
+  </div>
+
+  
+ <!-- ZONA COMICSTRIP -->
+  <div class="playbox">
+	<div class="row"> 
+	  <div class="cell cell1">
+		<img id='im1' src="done/9a.jpg" style="width:100%">
+	  </div>
+      <div class="cell cell2" >
+		<img id="im2" onmouseover="document.getElementById('im2').src='done/9b.gif'" onmouseout="document.getElementById('im2')src='done/9b.jpg'" src="done/9b.jpg" style="width:100%" >
+	  </div>
+	  <div class="cell cell3">
+		<img id="im3" onmouseover="document.getElementById('im3').src='done/9c.gif'" onmouseout="document.getElementById('im3').src='done/9c.jpg'" src="done/9c.jpg" style="width:100%">
+	  </div>
+	  <div class="cell cell4">
+		<img id="im4" onmouseover="document.getElementById('im4').src='done/9d.gif'" onmouseout="document.getElementById('im4').src='done/9d.jpg'" src="done/9d.jpg" style="width:100%">
+	  </div>
+	</div>
+  </div>
+  
+  
+<!--NAVIGARE-->
+  <div class="navigation">
+  	<a href="p4.html" class="next round">&#8249;</a></li>
+	<a href="p6.html" class="next round">&#8250;</a></li>
+	<div class="navdots">
+		<ul class="dots round">
+		 <li><a href="INDEX.html"></a></li>
+		  <li><a href="P2.html"></a></li>
+		  <li><a href="P3.html"></a></li>
+		  <li><a href="P4.html"></a></li>
+		  <li  id="activ"><a href="P5.html"></a></li>
+		  <li><a href="P6.html"></a></li>
+		  <li><a href="P7.html"></a></li>
+		  <li><a href="P8.html"></a></li>
+		  <li><a href="P9.html"></a></li>
+		  <li><a href="P10.html"></a></li>
+		  <li><a href="P11.html"></a></li>
+		  <li><a href="P12.html"></a></li>
+		</ul>
+	</div>
+
+  </div>
+
+
+
+</body>
+</html>
